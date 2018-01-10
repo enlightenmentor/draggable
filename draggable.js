@@ -55,6 +55,8 @@ const draggable = (function () {
     };
 
     node.addEventListener('mousedown', startCallback);
+
+    return node;
   }
 
   return draggable;

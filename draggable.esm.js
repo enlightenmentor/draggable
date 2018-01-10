@@ -52,6 +52,8 @@ function draggable(node) {
   };
   
   node.addEventListener('mousedown', startCallback);
+
+  return node;
 }
 
 export default draggable;
