@@ -41,9 +41,9 @@ const draggable = (function () {
 
     const dragCallback = (event) => {
       event.preventDefault();
+      dispatchDragEvent(node, 'dragging', event, prevX, prevY);
       prevX = event.x;
       prevY = event.y;
-      dispatchDragEvent(node, 'dragging', event, prevX, prevY);
     };
 
     const endCallback = (event) => {
